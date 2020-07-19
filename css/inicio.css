@@ -1,0 +1,101 @@
+
+
+.imagena{
+    width: 180px;
+    height: 220px;
+
+    
+}
+
+body{
+   
+    background-image: url(../imagenes/lol.jpg);
+    background-size: 1530px 755px; 
+   
+    
+}
+
+
+.informacion{
+    /* background: yellow; */
+    margin-top: 15px;
+    width: 1050px;
+    height: 100px ;
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.juego{
+    
+    display: flex;
+    /* background: slateblue; */
+    width: 1050px;
+    height: 310px;
+   
+    margin :0 auto; 
+    flex-wrap: wrap;
+}
+
+
+.font_bt{
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+  
+}
+
+.botp{
+    width: 355px;
+    height: 50px ;
+   
+    
+}
+
+
+.boto1{
+    /* background: yellow; */
+    margin-top: 35px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    
+   
+    
+}
+
+.boto2{
+    /* background: yellowgreen ; */
+    width: 300px;
+    height: 50px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.botones{
+    /* background: slategray; */
+    width: 300px;
+    height: 150px;
+    margin: 0 auto; 
+
+}
+
+.imagen_padre{
+    /*   */
+    width: 600px;
+    height: 400px;
+    margin :0 auto; 
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+

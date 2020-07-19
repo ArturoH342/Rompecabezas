@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/datos.css" type="text/css" rel="stylesheet"  >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="juego.html" method="GET"  > 
+
+
+        <div class="contenedor_padre" >
+            <div class="contene" >
+                <div class="dat"  >
+                    
+                    <div class="nm on" >Nombre: <input type="text" name="nombre"  id="nombre_e"  class="e" value="" required > </div>
+                    <div class="nm an " >  Edad   :   <input type="text"  name="edad"  id="edad_d" class="a" value=""  required > </div>
+                    
+                    <!-- <div class="nm in" > <input type="file" style="font-family: 'Press Start 2P', cursive;"  name="imagen_usua"  /> </div> -->
+                </div>
+              
+        
+                    <!-- <button type="submit" class="btn btn-dark btn1 "     >Cargar Datos</button> -->
+                    <button type="submit" class="btn btn-dark btn1 "  onclick="location.href = 'juego.html'"  >Inciar Juego</button>
+                    <button type="button" class="btn btn-dark btn2 " onclick="location.href = 'index.html'"  >Atras</button>
+             
+            </div>
+
+    </form>
+
+
+
+    <div >
+        <audio  src="Sound/datos.mp3" autoplay loop preload="auto" id="audio"  ></audio>
+    </div>
+
+
+</div>
+</body>
+</html>

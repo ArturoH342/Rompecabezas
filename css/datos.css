@@ -1,0 +1,91 @@
+body{
+    background: url(../imagenes/nebulosa.jpg);
+    background-size: 1585px 750px;
+}
+
+.contenedor_padre{
+    /* background: teal; */
+    display: block;
+    height: 750px;
+    display:flex; 
+    justify-content:center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+
+    
+}
+.contene{
+    
+    background: url("../imagenes/cat.jpg");
+    
+    background-size: 430px 550px;
+    /* background: springgreen; */
+    width: 430px ;
+    height: 550px;
+
+    
+}
+
+.contene:hover{
+
+    border:6px solid white;
+    box-sizing: border-box;
+}
+
+.nm{
+    /* background: tomato; */
+    width: 250px;
+    color: white;
+    margin-left: 0px;
+   
+}
+.in{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.an{
+
+    margin-top: 8px;
+    margin-left: 90px;
+}
+.on{
+    
+    margin-left: 90px;
+   
+}
+.a{
+    margin-top: 8px;
+}
+
+.e{
+    margin-top: 8px;
+}
+
+.dat{
+    
+    margin-top: 50px;
+    /* background: slateblue; */
+    width: 320px;
+}
+
+.btn-dark{
+    
+    width: 200px;
+    height: 55px;
+}
+
+.btn1{
+    
+
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.btn2{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 120px;
+    
+    
+}

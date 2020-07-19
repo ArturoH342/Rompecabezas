@@ -1,0 +1,347 @@
+
+body{
+    background-image: url(../imagenes/juego.jpg);
+    background-size: 1540px  1400px;
+}
+
+
+ .perfil {
+    display: flex;
+    justify-content: flex-start;
+    height: 150px;
+    width: 1510px;
+    margin: 0 auto ;
+    margin-top: 5px;
+    margin: 20px;
+  }
+
+
+.usuario{
+    /* background: tomato; */
+    width: 38%;
+    
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.subir {
+    /* background-color:blue; */
+    width: 34%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.botones{
+    /* background-color:green; */
+    width: 35%; 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.boto1{
+    /* background: steelblue; */
+    width: 420px;
+    height: 45px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.botp{
+    width: 230px ;
+    height: 40px ;
+}
+
+.font_bt{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+
+.usuario-hijo 
+{
+    
+    /* background: teal; */
+    height: 100%;
+    width: 60%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    flex-wrap: wrap;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+.imageno{
+    /* background:slateblue; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    
+    /* justify-content:center; */
+    align-items: center;
+    margin-left: 22px;
+}
+
+.ard{
+    border:5px solid white;
+    box-sizing: border-box;
+    height: 130px; 
+    width: 130px;
+}
+
+
+.l1{
+    /* background: springgreen; */
+    width: 500px;
+}
+
+.pic{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.alert{
+    background: rgb(56, 55, 55);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.fila1{
+display:flex;
+justify-content: center;
+/* background: blue; */
+
+}
+
+.padre_pieza {
+    border:6px solid transparent;
+    width:170px;
+    height:170px;
+    margin :10px; 
+    box-sizing: border-box;
+
+}
+.padre_pieza:hover{
+    border:6px solid white;
+    box-sizing: border-box;
+}
+.padre_pieza img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display:flex;
+    width:70%;
+    /* background:red; */
+    height:500px;
+    justify-content: flex-start;
+    margin :0 auto; 
+}
+
+.fila2 {
+ /* background:purple; */
+ width: 20%;
+ height:100%;
+ display:flex; 
+ justify-content:center;
+ flex-direction: column;
+ align-items: center;
+}
+
+.fila3{
+    /* background:purple; */
+    width: 20%;
+    height:100%;
+    display:flex; 
+    justify-content:center;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+
+
+
+
+
+
+.puzzle-tabla{
+    width: 65%;
+    height:100%;
+    /* background:blue; */
+    opacity: 0.45;
+
+}
+
+#puzzle-tab
+{
+    display: block; 
+    margin: 0  auto;
+}
+
+
+
+
+.fila3{
+
+    width: 20%;
+    height:100%;
+    /* background:green; */
+}
+
+
+
+#imagen_occ{
+    display:none;
+} 
+
+.o{
+    display: none;
+}
+
+.c{
+    display: none;
+}
+
+
+
+
+
+
+.movimiento_naranja{
+    /* background: tomato; */
+    width: 350px;
+    margin: 15PX;
+    margin: 5px;
+    
+    margin: 0 auto;
+    font-size: 23px;
+    
+}
+
+.mon_n{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    
+}
+.s{
+    margin-top: 150px;
+    
+    
+}
+
+
+
+
+
+
+.puzzle-tabla {
+    opacity: 0.5;
+}
+
+.tablero {
+    /* position: relative; */
+    width: 600px;
+    height: 600px;
+    margin:auto 0;
+    /* background: burlywood; */
+}
+.item-tab 
+{
+    width: 32%;
+    height: 32%;
+     float: left;
+     margin:2px;
+    box-sizing: border-box; 
+
+}
+
+.item-tab:hover{
+    border:6px solid white;
+    box-sizing: border-box;
+}
+
+.item-tab img {
+    width: 100%;
+    height: 100%;
+}
+ 
+.volte_r
+{
+    transform:  rotateY(180deg);
+    transform: rotateX(180deg);
+} 
+
+
+.minutos_t{
+    display: block;
+    margin: 0 auto;
+}
+
+
+#ganador_ima_oculto{
+    display: none;
+    width: 550px;
+    margin: 0 auto;
+}
+
+#perpedor_oculto{
+    display: none;
+}
+
+#perpedor_oculto_2{
+    display: none;
+}
+
+#gif_ganador{
+    margin-left:150px;
+}
+
+
+#Winner{
+    margin-left: 16px;
+}
+
+#gif_perdedor1{
+    margin-top: 40px;
+    margin-left: 555px;
+    width: 400px;
+    height: 400px;
+}
+
+#gif_perdedor2{
+    margin-top: 40px;
+    margin-left: 555px;
+    width: 400px;
+    height: 400px;
+
+}
+
+.gan{
+    background: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    width: 500px;
+    margin: 0 auto;
+}
+

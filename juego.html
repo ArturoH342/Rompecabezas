@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/juego.css" type="text/css">
+  
+</head>
+<body  >
+    
+    <div class="perfil">
+    
+
+      <div class="usuario ">
+
+
+        <div class="usuario-hijo   alert alert-dark " role="alert">
+
+            <div class="l1"> NOMBRE: <span id="name_user"></span></div> 
+            
+            <div class="l1" >EDAD: <span id="age_user"> </span>  </div> 
+
+        </div>
+        
+        <div class="imageno "  >
+            <div class=" ard  " role="alert" >
+                <img src="imagenes/usuario_a.jpg"   class="pic" id="ima_usuario_juego" >
+            </div>
+        </div>
+
+        
+
+    </div>
+      
+
+    
+
+
+      <div class="subir" >
+        <div  class=" alert alert-dark" role="alert" >
+
+            <input type="file"  class="form-control-file" id="exampleFormControlFile1"  src="" >
+        </div>
+      </div>
+
+
+
+
+
+        <div class="botones "  >
+        
+            <div class="boto1">
+                <div>
+                    <button type="button" onclick="location.href = 'datos.html'" class="btn btn-dark botp"><div class="font_bt" >REINCIAR</div> </button>
+                </div>
+            </div>
+            
+
+            
+            <div class="boto1" >
+                <div>
+                    <button type="button" onclick="location.href = 'index.html'" class="btn btn-dark botp"><div class="font_bt" >INCIO</div> </button>
+                </div>
+            </div>
+                
+
+
+            <div class="boto1" >
+                <div>  
+                    <button type="button" onclick="verificar()" class="btn btn-dark botp"><div class="font_bt" >VERIFICAR</div> </button>
+                </div>
+            </div>
+        </div>
+
+        
+
+    
+    </div>
+
+
+    <br><br>
+
+
+
+  
+<div id="ocultar_puzzle" class="separar"  >
+
+
+    
+     
+    
+
+
+    <div class="fila1 ">
+
+
+
+        <div onclick="select(this)" class="padre_pieza" >  
+
+          <img   data-type="content_piezas" data-position="7" class="item-fila   volte_r   " id="p-7"  alt=""   >  
+       
+        </div>
+
+
+        <div  onclick="select(this)"  class="padre_pieza" >
+
+            <img data-type="content_piezas" data-position="8" class="item-fila   volte_r   "id="p-8"    alt=""  > 
+       
+        </div>
+
+
+        <div onclick="select(this)" class="padre_pieza" >
+
+            <img data-type="content_piezas" data-position="9"  class="item-fila   volte_r   " id="p-9" alt=""  > 
+       
+        </div>
+
+
+
+
+    </div>
+
+
+    <br>
+
+
+    <div class="container">
+
+
+
+        <div class="fila2">
+            
+            <div  onclick="select(this)" class="padre_pieza" >
+                    
+                <img data-type="content_piezas" data-position="6"  class="item-fila   volte_r   " id="p-6"  alt="" >  
+           
+            </div>
+
+
+           
+            <div onclick="select(this)" class="padre_pieza" >
+              
+                <img data-type="content_piezas" data-position="5"  class="item-fila   volte_r   "id="p-5"   alt=""  > 
+         
+            </div>
+
+
+            <div  onclick="select(this)" class="padre_pieza" >
+          
+                <img data-type="content_piezas" data-position="4" class="item-fila   volte_r   " id="p-4"  alt=""   > 
+           
+            </div>
+
+
+
+        </div>
+
+ 
+
+
+        <div  id="puzzle-main" >  <!--se refiere al tablero-->
+
+           
+
+            <div id='padre-puzzle' class="tablero">
+
+                <div onclick="select_puzzle(this)" class="tab-1 item-tab"  >
+
+                    <img data-type="content_puzzle" data-position="1"  class="item-fila-puzzle   volte_r   "  alt=""  >  
+               
+                </div>
+
+                <div onclick="select_puzzle(this)"  class="tab-2 item-tab">
+
+                    <img data-type="content_puzzle" data-position="2" class="item-fila-puzzle   volte_r   "  alt=""  >  
+              
+                </div>
+
+                <div onclick="select_puzzle(this)" class="tab-3 item-tab">
+
+               
+                    <img data-type="content_puzzle" data-position="3"  class="item-fila-puzzle   volte_r   "  alt=""  >  
+              
+                </div>
+
+                <div onclick="select_puzzle(this)" class="tab-6 item-tab">
+
+                    <img data-type="content_puzzle" data-position="6"  class="item-fila-puzzle   volte_r   "  alt=""  >  
+               
+                </div>
+               
+                <div onclick="select_puzzle(this)"  class="tab-5 item-tab">
+               
+                    <img data-type="content_puzzle" data-position="5" class="item-fila-puzzle   volte_r   "  alt=""  >  
+               
+                </div>
+               
+                <div onclick="select_puzzle(this)"  class="tab-4 item-tab">
+               
+                    <img data-type="content_puzzle" data-position="4" class="item-fila-puzzle   volte_r   "  alt="" >  
+               
+                </div>
+               
+                <div  onclick="select_puzzle(this)" class="tab-7 item-tab">
+               
+                    <img data-type="content_puzzle" data-position="7" class="item-fila-puzzle   volte_r   "  alt=""  >  
+               
+                </div>
+               
+                <div onclick="select_puzzle(this)" class="tab-8 item-tab">
+               
+                    <img data-type="content_puzzle" data-position="8"  class="item-fila-puzzle   volte_r   "  alt=""  >  
+               
+                </div>
+               
+                <div onclick="select_puzzle(this)" class="tab-9 item-tab">
+               
+                    <img data-type="content_puzzle" data-position="9"  class="item-fila-puzzle   volte_r   "  alt="" >  
+               
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        |<div class="fila3">
+
+
+            <div onclick="select(this)"  class="padre_pieza" >
+            
+                <img data-type="content_piezas" data-position="1" class="item-fila   volte_r   " id="p-1"   alt=""    >  
+        
+            </div>
+
+        
+            <div onclick="select(this)"  class="padre_pieza" >
+            
+                <img data-type="content_piezas" data-position="2"  class="item-fila   volte_r   "id="p-2"  alt=""    > 
+        
+            </div>
+        
+        
+            <div onclick="select(this)"  class="padre_pieza" >
+            
+                <img data-type="content_piezas" data-position="3" class="item-fila   volte_r   " id="p-3"  alt=""    > 
+        
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- CAnvas Oculto -->
+<div class="puzzle-oculto">
+
+    <img src="" id="imagen_occ" width="" height=""  >
+
+    <canvas id="micanvas" width=""  height=""   class="c" > </canvas>
+    
+    <canvas id="corte1" width="" height=""   class="o"> </canvas>
+    
+    <canvas id="corte2" width="" height=""   class="o"> </canvas>
+    
+    <canvas id="corte3" width="" height=""   class="o"> </canvas>
+    
+    <canvas id="corte4" width="" height=""   class="o"> </canvas>
+    
+    <canvas id="corte5" width="" height=""   class="o"> </canvas>
+
+    <canvas id="corte6" width="" height=""  class="o" > </canvas>
+
+    <canvas id="corte7" width="" height=""   class="o"> </canvas>
+
+    <canvas id="corte8" width="" height=""   class="o"> </canvas>
+
+    <canvas id="corte9" width="" height=""  class="o" > </canvas>
+
+</div>
+
+
+
+
+
+
+<div id="ganador_ima_oculto"   >
+    
+    <img src="" width="" height=""  class="imegn_final_ganador " id="Winner"    >
+    
+    <br>
+    
+    <img src="imagenes/scot_b.gif" id="gif_ganador"  >
+
+    <div class="alert alert-success gan" role="alert"  >
+        Ganaste, Felicidades!
+    </div>
+</div>
+
+
+
+<div id="perpedor_oculto" >
+
+   
+    <div class="alert alert-danger gan" role="alert">
+       Perdiste, lo siento compañero :C 
+    </div>
+    <img src="imagenes/perdedor1.gif" id="gif_perdedor1"  >
+
+
+</div>
+
+
+
+<div id="perpedor_oculto_2" >
+
+    
+    <div class="alert alert-danger gan" role="alert">
+       No rellenaste el rompecabezas!   
+    </div>
+    <img src="imagenes/perdedor2.gif" id="gif_perdedor2"  >
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="s" id="s"   >
+    <div class="   alert alert-dark movimiento_naranja separar" role="alert">
+
+        <div class="mon_n"> MOV : <span id="name_mov"></span> movs  </div> 
+
+    </div>
+
+    <br>
+
+    <div class="   alert alert-dark movimiento_naranja  separar " role="alert">
+
+        <div id="testdiv"  class="mon_n"> <span id="min"    >00</span><span   > min</span> <span>:</span> <span id="seg" >00</span><span> seg</span> </div> 
+
+    </div>
+    
+
+    
+</div>
+
+<div >
+    <audio  src="Sound/juego.mp3" autoplay loop preload="auto" id="audio"  ></audio>
+</div>
+
+<script src="js/corte-Imagenes.js"></script>
+
+<script src="js/logica.js"></script>
+</body>
+</html>
