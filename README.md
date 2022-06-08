@@ -1,3 +1,3 @@
-#MI PROYECTO 
+# PROYECTO 
 
 #Proyecto Rompecabezas-plus
